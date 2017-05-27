@@ -84,6 +84,7 @@ This is different from a client because this is a learning experience.  As such,
 and "fix" them.  I demonstrate some cool knowledge of responsive concepts, along with newer HTML5, and CSS3.
 
 Tests:
+
     This code needs to be tested on a variety of mediums.
     1.  We need to start testing on speeds less than 3g.
         a.  On all devices that are mainstream use for our scarf wearing demo.
@@ -91,9 +92,7 @@ Tests:
     2.  Provide a backup css style for other browsers, especially the dreaded internet explorer.
         a. Test on internet explorer and across all browsers.
         b.  Use online resources such as VirtualBox and Google Emulator.
-
     3.  Create a timer for load time across browsers.  Record main demographic numbers.
-
     4.  Interact with others just to see how they like how site handles.  Get general feedback and look at improving usability.
 
 

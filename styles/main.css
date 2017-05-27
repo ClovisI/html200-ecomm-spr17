@@ -201,6 +201,15 @@ p {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
+p{
+padding: 1em;
+border: 1em solid transparent;
+background: linear-gradient(white, red) padding-box,
+            repeating-linear-gradient(-45deg, green 0, green 12.5%, transparent 0, transparent 25%,
+              green, red 37.5%, transparent 0, transparent 50%) 0 / 6em 6em;
+
+max-width: 20em;
+}
 }
 
 /* Smartphones (landscape) ----------- */
@@ -215,6 +224,15 @@ p {
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  p{
+  padding: 1em;
+  border: 1em solid transparent;
+  background: linear-gradient(green, white) padding-box,
+              repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0, transparent 25%,
+                green, white 37.5%, transparent 0, transparent 50%) 0 / 6em 6em;
+
+  max-width: 20em;
+  }
 /* Styles */
 }
 
@@ -239,6 +257,15 @@ iPad 3
 }
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
+  p{
+  padding: 1em;
+  border: 1em solid transparent;
+  background: linear-gradient(green, white) padding-box,
+              repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0, transparent 25%,
+                green, white 37.5%, transparent 0, transparent 50%) 0 / 6em 6em;
+
+  max-width: 20em;
+  }
 /* Styles */
 }
 

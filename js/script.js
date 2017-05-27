@@ -134,7 +134,7 @@ function answerQuestion () {
   var rando = Math.floor(Math.random() * answers.length);
   var answer = answers[rando];
 
-  var container = document.getElementById("fortune-container");
+  var container = document.getElementById("cartSize");
   container.innerHTML = "<p>" + cartCounter + "</p>";
 
   // console.log(["Oh, you asked...", question, "? ", "Well I think...", answer].join(" "))
