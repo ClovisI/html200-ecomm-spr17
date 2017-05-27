@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+ <link href="https://fonts.googleapis.com/css?family=Snowburst+One" rel="stylesheet">
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
 
@@ -21,16 +22,20 @@
         <li><a href="#">Gloves</a></li>
         <li><a href="#">Scarves</a></li>
         <li class="cart-info">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <i class="fa fa-shopping-cart shoppingBasket" aria-hidden="true" onclick="document.write(cartCount(cartCounter))"><script type="text/javascript">
+          </script></i>
         </li>
       </ul>
     </nav>
 
     <img src="images/logo-scarfcat.png" class="img-fluid" alt="dapper cartoon cat wearing a scarf">
     <h1 class="col-xs-1 col-lg-1">
+      <svg overflow="visible" width="2em" height="1.2em"><use xlink:href="#css" /><text id="css" y="1em">
       <span class="logo-w">W</span>inter
       <span class="logo-w">W</span>ear
       <span class="logo-w">W</span>arehouse
+    </text>
+      </svg>
     </h1>
   </header>
 
@@ -54,6 +59,10 @@
           <img src="images/reversible-plaid-400w.jpg" alt="reversible plaid scarf" class="col-xs-12 img-fluid">
           <p class="col-xs-12">Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.</p>
           <p class="col-xs-1">26.99</p>
+          <div class="cart-add">
+            <i class="fa fa-plus"><input type="button" class="fa fa-plus" id="add-reversible-plaid" onclick="addItem(products[0])"></i>
+            <i class="fa fa-minus"><input type="button" id="remove-reversible-plaid" onclick="removeItem(products[0])"></i>
+        </div>
         </div>
 
         <div class="merch-card col-xs-12 col-sm-6 col-md-4">
@@ -61,6 +70,10 @@
           <img src="images/fringed-plaid-400w.jpg" alt="fringed plaid scarf" class="col-xs-12 img-fluid">
           <p class="col-xs-12">Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic.</p>
           <p class="col-xs-1">18.99</p>
+          <div class="cart-add">
+            <i class="fa fa-plus"><input type="button" class="fa fa-plus" id="add-fringed-plaid" onclick="addItem(products[1])"></i>
+            <i class="fa fa-minus"><input type="button" id="remove-fringed-plaid" onclick="removeItem(products[1])"></i>
+        </div>
         </div>
 
         <div class="merch-card col-xs-12 col-sm-6 col-md-4">
@@ -68,6 +81,10 @@
           <img src="images/multi-color-400w.jpg" alt="multi color scarf" class="col-xs-12 img-fluid">
           <p class="col-xs-12">The Who What Where Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic.</p>
           <p class="col-xs-1">22.99</p>
+          <div class="cart-add">
+            <i class="fa fa-plus"><input type="button" class="fa fa-plus" id="add-multi-color" onclick="addItem(products[2])"></i>
+            <i class="fa fa-minus"><input type="button" id="remove-multi-color" onclick="removeItem(products[2])"></i>
+        </div>
         </div>
 
         <div class="merch-card col-xs-12 col-sm-6 col-md-4">
@@ -75,6 +92,10 @@
           <img src="images/northern-lights-400w.jpg" alt="northern lights scarf" class="col-xs-12 img-fluid">
           <p class="col-xs-12">Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>
           <p class="col-xs-1">29.99</p>
+          <div class="cart-add">
+            <i class="fa fa-plus"><input type="button" class="fa fa-plus" id="add-northern-lights" onclick="addItem(products[3])"></i>
+            <i class="fa fa-minus"><input type="button" id="remove-northern-lights" onclick="removeItem(products[3])"></i>
+        </div>
         </div>
 
         <div class="merch-card col-xs-12 col-sm-6 col-md-4">
@@ -82,6 +103,10 @@
           <img src="images/ombre-infinity-400w.jpg" alt="ombre infinity scarf" class="col-xs-12 img-fluid">
           <p class="col-xs-12">A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic.</p>
           <p class="col-xs-1">11.99</p>
+          <div class="cart-add">
+            <i class="fa fa-plus"><input type="button" class="fa fa-plus" id="add-ombre-infinity" onclick="addItem(products[4])"></i>
+            <i class="fa fa-minus"><input type="button" id="remove-ombre-infinity" onclick="removeItem(products[4])"></i>
+        </div>
         </div>
 
         <div class="merch-card col-xs-12 col-sm-6 col-md-4">
@@ -89,6 +114,10 @@
           <img src="images/twill-400w.jpg" alt="ashby twill scarf" class="col-xs-12 img-fluid">
           <p class="col-xs-12">Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool.</p>
           <p class="col-xs-1">70.99</p>
+          <div class="cart-add">
+            <i class="fa fa-plus"><input type="button" class="fa fa-plus" id="add-ashby-twill" onclick="addItem(products[5])"></i>
+            <i class="fa fa-minus"><input type="button" id="remove-ashby-twill" onclick="removeItem(products[5])"></i>
+        </div>
         </div>
 
         <div class="merch-card col-xs-12 col-sm-6 col-md-4">
@@ -96,6 +125,10 @@
           <img src="images/wool-cable-400w.jpg" alt="wool cable knit scarf" class="col-xs-12 img-fluid">
           <p class="col-xs-12">Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>
           <p class="col-xs-1">49.99</p>
+          <div class="cart-add">
+            <i class="fa fa-plus"><input type="button" class="fa fa-plus" id="add-wool-cable" onclick="addItem(products[6])"></i>
+            <i class="fa fa-minus"><input type="button" id="remove-wool-cable" onclick="removeItem(products[6])"></i>
+        </div>
         </div>
 
         <div class="merch-card col-xs-12 col-sm-6 col-md-4">
@@ -103,6 +136,10 @@
           <img src="images/etro-400w.png" alt="etro paisley print silk scarf" class="col-xs-12 img-fluid">
           <p class="col-xs-12">Luxurious silk scarf with subtle paisley pattern. 100% silk.</p>
           <p class="col-xs-1">26.99</p>
+          <div class="cart-add">
+            <i class="fa fa-plus"><input type="button" class="fa fa-plus" id="add-etro-paisley" onclick="addItem(products[7])"></i>
+            <i class="fa fa-minus"><input type="button" id="remove-etrro-paisley" onclick="removeItem(products[7])"></i>
+        </div>
         </div>
 
       </div>

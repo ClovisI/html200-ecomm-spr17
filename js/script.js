@@ -32,7 +32,7 @@ var products = [
   {
     "name": "Multi Color",
     "price": 22.99,
-    "description": "The Who What Wear Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic",
+    "description": "The Who What Wear Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic",
     "imageTitle": "multi-color.jpeg"
   },
   {
@@ -47,5 +47,79 @@ var products = [
     "description": "Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool",
     "imageTitle": "twill.jpg"
   }
-]
+];
 
+var cart= [
+
+];
+
+var cartLength=0;
+var cartCounter=0;
+// var itemPosition[];
+//
+//
+function getItem (products, itemID) {
+  for (var i = 0; i < products.length; i++) {
+    if (products[i]== itemID) {
+      cart.push(productID);
+      return document.getproducts[0];
+    }
+  }
+}
+
+var productID;
+function addItem(productID) {
+  console.log(productID);
+  itemID = document.getElementById('numberItem');
+  // itemID.name=name;
+  // itemID.price=price;
+  // itemID.description=description;
+
+  getItem('itemID');
+  cart.push(productID);
+  alert("You have just added " + productID.name + " to your cart!");
+
+  // itemPosition [cartCounter]=itemID;
+  cartCounter+=1;
+  cartLength+=1;
+  console.log(cart);
+}
+
+// function findItem(){
+//   var i = cart.indexOf(products[]);
+//   if (i != -1){
+//     cart.splice (i, 1);
+//   }
+// }
+
+function takeItem (products, itemID) {
+  for (var i = 0; i < products.length; i++) {
+    if (cart[i]== removeID) {
+      cart.splice(removeID);
+      // return document.getproducts[0];
+    }
+  }
+}
+var removeID;
+function removeItem(removeID) {
+  console.log(removeID);
+  removeItemID = document.getElementById('numberItem');
+  // itemID.name=name;
+  // itemID.price=price;
+  // itemID.description=description;
+
+  takeItem('itemID');
+  cart.splice(removeID);
+  alert("You have just removed " + removeID.name + " from your cart!");
+
+  // itemPosition [cartCounter]=itemID;
+  cartCounter-=1;
+  cartLength-=1;
+  console.log(cart);
+}
+
+cart.push();
+cart.pop();
+function cartCount() {
+document.write('<h1>'+ cartCounter + '</h1>');
+}
