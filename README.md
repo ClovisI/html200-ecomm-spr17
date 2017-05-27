@@ -70,4 +70,33 @@ Lesson 09:
 Each weekly assignment will be graded independently. There will not be a final grade for the entire project.
 
 ## Testing 
-[update this section with information about the testing steps you took to ensure site quality]
+Synopsis:
+This is my HTML 200 eCommerce Site
+    My project focuses on highlighting the benefits of well designed foundational HTML, CSS, and JavaScript.
+    I wanted to make a responsive site that worked well with BootStrap.  I experimented with a lot of different ideas.
+    This is obviously still a work in progress.  I still have much to improve on it, but I love the foundation.  It is 
+    fluid and responsive.  Everything works.
+
+Motivation:
+My motivation was to improve my understanding of HTML, CSS, JavaScript, BootStrap concepts.  It exists to help me be a better
+web developer.  There were items that I wanted to learn, without having to put the pressure on myself to make it exactly "perfect".
+This is different from a client because this is a learning experience.  As such, there was more room to try things, without having to go back
+and "fix" them.  I demonstrate some cool knowledge of responsive concepts, along with newer HTML5, and CSS3.
+
+Tests:
+    This code needs to be tested on a variety of mediums.
+    1.  We need to start testing on speeds less than 3g.
+        a.  On all devices that are mainstream use for our scarf wearing demo.
+            i.  Look into more of what our demographic is.
+
+    2.  Provide a backup css style for other browsers, especially the dreaded internet explorer.
+        a. Test on internet explorer and across all browsers.
+        b.  Use online resources such as VirtualBox and Google Emulator.
+
+    3.  Create a timer for load time across browsers.  Record main demographic numbers.
+
+    4.  Interact with others just to see how they like how site handles.  Get general feedback and look at improving usability.
+
+
+Built With:
+    HTML, JavaScript, CSS3, FONT AWESOME, Google Fonts, BootStrap.

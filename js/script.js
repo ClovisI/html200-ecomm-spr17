@@ -82,7 +82,7 @@ function addItem(productID) {
   // itemPosition [cartCounter]=itemID;
   cartCounter+=1;
   cartLength+=1;
-  console.log(cart);
+  console.log(cartLength);
 }
 
 // function findItem(){
@@ -115,11 +115,27 @@ function removeItem(removeID) {
   // itemPosition [cartCounter]=itemID;
   cartCounter-=1;
   cartLength-=1;
-  console.log(cart);
+  console.log(cartLength);
 }
 
 cart.push();
 cart.pop();
 function cartCount() {
 document.write('<h1>'+ cartCounter + '</h1>');
+var container = document.getElementById("fortune-container");
+container.innerHTML = "<p>" + question + "You ask? well I think..." + answer + "</p>";
+}
+
+
+function answerQuestion () {
+  event.preventDefault();
+
+  var question = document.magic8.question.value;
+  var rando = Math.floor(Math.random() * answers.length);
+  var answer = answers[rando];
+
+  var container = document.getElementById("fortune-container");
+  container.innerHTML = "<p>" + cartCounter + "</p>";
+
+  // console.log(["Oh, you asked...", question, "? ", "Well I think...", answer].join(" "))
 }

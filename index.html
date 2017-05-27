@@ -22,8 +22,10 @@
         <li><a href="#">Gloves</a></li>
         <li><a href="#">Scarves</a></li>
         <li class="cart-info">
-          <i class="fa fa-shopping-cart shoppingBasket" aria-hidden="true" onclick="document.write(cartCount(cartCounter))"><script type="text/javascript">
+          <i class="fa fa-shopping-cart shoppingBasket" onclick="" aria-hidden="true"><script type="text/javascript">
+          document.getElementById("cartSize").innerHTML = cartCounter;
           </script></i>
+          <p id="cartSize"></p>
         </li>
       </ul>
     </nav>
