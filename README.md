@@ -88,7 +88,6 @@ Tests:
     1.  We need to start testing on speeds less than 3g.
         a.  On all devices that are mainstream use for our scarf wearing demo.
             i.  Look into more of what our demographic is.
-
     2.  Provide a backup css style for other browsers, especially the dreaded internet explorer.
         a. Test on internet explorer and across all browsers.
         b.  Use online resources such as VirtualBox and Google Emulator.
